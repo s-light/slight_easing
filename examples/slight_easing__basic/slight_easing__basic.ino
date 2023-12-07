@@ -34,9 +34,10 @@ void printEasingFunction() {
     float y = 0.0;
     for (float x = 0.0; x < 1.0; x = x + 0.05) {
         Serial.print(x, 3);
-        Serial.print("=");
+        Serial.print("; ");
         float y = easeBezierBlend(x);
         Serial.print(y, 3);
+        Serial.println();
     }
 }
 

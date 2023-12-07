@@ -26,26 +26,27 @@ void setup() {
 
     Serial.println(F("slight_easing__advanced.ino sketch."));
     Serial.println(F("advanced example for library usage."));
-
-    // TODO: write example for easing usage..
 }
 
 void printEasingFunction(tEasingFunction easingFN) {
     float y = 0.0;
     for (float x = 0.0; x < 1.0; x = x + 0.05) {
         Serial.print(x, 3);
-        Serial.print("=");
+        Serial.print("; ");
         float y = easingFN(x);
         Serial.print(y, 3);
+        Serial.println();
     }
 }
 
 void loop() {
     printEasingFunction(easeBezierBlend);
     delay(2 * 1000);
-    printEasingFunction(easeCubicIn);
-    delay(2 * 1000);
     printEasingFunction(easeCubicInOut);
+    delay(2 * 1000);
+    printEasingFunction(easeSineInOut);
+    delay(2 * 1000);
+    printEasingFunction(easeCircularInOut);
     delay(2 * 1000);
     
     delay(10 * 1000);
