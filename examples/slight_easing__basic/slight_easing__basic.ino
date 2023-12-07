@@ -26,8 +26,6 @@ void setup() {
 
     Serial.println(F("slight_easing__minimal.ino sketch."));
     Serial.println(F("minimal example for library usage."));
-
-    // TODO: write example for easing usage..
 }
 
 void printEasingFunction() {

@@ -34,6 +34,8 @@ please have a look at the examples:
 - [slight_easing__basic.ino](examples/slight_easing__basic/slight_easing__basic.ino)
 - [slight_easing__advanced.ino](examples/slight_easing__advanced/slight_easing__advanced.ino)
 
+they should work with the Arduino IDE *Serial Plotter*.
+
 ## inspired / sourced from
 these functions are based on these sources:
 - https://github.com/warrenm/AHEasing/blob/master/AHEasing/easing.c
